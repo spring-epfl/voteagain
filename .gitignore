@@ -1,0 +1,15 @@
+# MacOS temporary files
+.DS_Store
+
+# Development files
+*.pyc
+**__pycache__/
+venv/
+.swp
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Output files
+figures/*.pdf

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TARGET_DIR=data/distr/
+NR_RUNS=1
+
+# Using 50.000 ballots after padding
+NR_VOTERS="4,20,50,100,200,500,1000,2000,5000,10000,20000,50000"
+PERCENTS="300850.0,29155.0,9246.0,3839.0,1720.0,585.4,257.9,121.45,44.3,19.97,7.665,0"
+
+python -m voteagain filter -o $TARGET_DIR -r $NR_RUNS -n $NR_VOTERS -p $PERCENTS

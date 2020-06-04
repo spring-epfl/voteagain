@@ -1,0 +1,7 @@
+#!/bin/sh
+
+TARGET_DIR=data/mix/
+NR_RUNS=1
+NR_CIPHERTEXTS="100,216,464,1000,2156,4640,10000,21544,46416,100000,215444"
+
+python -m voteagain mix-and-decrypt -o $TARGET_DIR -n $NR_CIPHERTEXTS -r $NR_RUNS

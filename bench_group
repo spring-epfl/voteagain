@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import math
+import time
+
+from petlib.ec import EcGroup
+
+NR_EXPERIMENTS = 100000
+
+def bench_group(nid):
+    G = EcGroup(nid)
+
+    exponents = [G.order().random() for _ in range(NR_EXPERIMENTS)]
+
+    start = time.process_time()
+    result = [exp * G.generator() for exp in exponents]
+    stop = time.process_time()
+
+    time_per_op_us = (stop - start) / NR_EXPERIMENTS * 1000000
+    order_bits = math.log(int(str(G.order())), 2)
+
+    print("Group order (in bits)", order_bits)
+    print("Group operation (nid={}): {:f} us".format(nid, time_per_op_us))
+
+bench_group(415)
