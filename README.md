@@ -168,7 +168,12 @@ verify the basic functionality of the functions. To run them, execute
 
 ## Processing data
 
-The Jupyter notebook in `analysis` takes the data produced by the scripts
+The [Jupyter
+notebook](https://github.com/spring-epfl/voteagain/blob/master/analysis/analysis.ipynb)
+shows how we processed the measurements produced by the scripts
 `run_experiments_distr.sh`, `run_experiments_filter.sh` and
-`run_experiments_mix` and produces the remaining sets of graphs in the paper, as
-well as reproduces most performance numbers mentioned in the paper.
+`run_experiments_mix`. The notebook produces the remaining sets of graphs in the
+paper, as well as reproduces most performance numbers mentioned in the paper.
+
+You can find the notebook in `analysis/` and play around with it by opening it
+with Jupyter.
