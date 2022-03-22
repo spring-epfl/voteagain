@@ -4,14 +4,13 @@ objsize
 scipy
 atomicwrites==1.2.1
 attrs==18.2.0
-cffi==1.11.5
+cffi==1.15
 coverage==4.5.1
 future==0.17.1
 more-itertools==4.3.0
 msgpack-python==0.5.6
--e git+https@github.com:bogdan-kulynych/petlib.git@fced003435e20d36fe9292632a9d7e46d744f825#egg=petlib
+petlib==0.0.45
 pluggy==0.8.0
-py==1.7.0
 pycparser==2.19
 pytest==3.10.0
 pytest-cov==2.6.0
