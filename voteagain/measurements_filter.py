@@ -29,7 +29,11 @@ def measure_performances_filter(namespace):
     repetitions = namespace.repetitions
 
     if len(num_voters_l) != len(revote_percent_l):
-        raise AttributeError()
+        if len(revote_percent_l) == 1:
+            revote_percent_l = revote_percent_l * len(num_voters_l)
+        else:
+            # In this case, there is likely an error in the arguments passed to the program.
+            raise AttributeError()
 
     ensures_dir_exists(output_dir)
 
