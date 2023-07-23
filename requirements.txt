@@ -6,7 +6,7 @@ atomicwrites==1.2.1
 attrs==18.2.0
 cffi==1.15
 coverage==4.5.1
-future==0.17.1
+future==0.18.3
 more-itertools==4.3.0
 msgpack-python==0.5.6
 petlib==0.0.45
